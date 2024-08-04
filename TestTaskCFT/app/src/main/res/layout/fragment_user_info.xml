@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".presentation.UserInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/header_block"
+                layout="@layout/head_block_user" />
+
+            <include
+                android:id="@+id/register_date_block"
+                layout="@layout/registration_date_block_user" />
+
+            <include
+                android:id="@+id/contacts_info_block"
+                layout="@layout/contacts_info_block_user" />
+
+            <include
+                android:id="@+id/location_info_block"
+                layout="@layout/location_info_block_user" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
